@@ -1,0 +1,20 @@
+{
+  "Navbar": {
+    "logo": "ANYTECH",
+    "solutions": "Solusi",
+    "anycaas": "AnyCaaS",
+    "anybaas": "AnyBaaS",
+    "anypaas": "AnyPaaS",
+    "services": "Layanan",
+    "about_us": "Tentang Kami",
+    "language": "ID",
+    "language_options": {
+      "en": "EN (Inggris)",
+      "th": "TH (Thai)",
+      "id": "ID (Bahasa Indonesia)",
+      "tw": "TW (Bahasa Tionghoa Tradisional)"
+    },
+    "contact_us": "Hubungi Kami",
+    "languageName": "BAHASA INDONESIA"
+  }
+}

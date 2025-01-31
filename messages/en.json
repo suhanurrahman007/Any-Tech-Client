@@ -1,0 +1,20 @@
+{
+  "Navbar": {
+    "logo": "ANYTECH",
+    "solutions": "Solutions",
+    "anycaas": "AnyCaaS",
+    "anybaas": "AnyBaaS",
+    "anypaas": "AnyPaaS",
+    "services": "Services",
+    "about_us": "About Us",
+    "language": "EN",
+    "language_options": {
+      "en": "EN (English)",
+      "th": "TH (Thai)",
+      "id": "ID (Bahasa Indonesia)",
+      "tw": "TW (Traditional Chinese)"
+    },
+    "contact_us": "Contact Us",
+    "languageName": "ENGLISH"
+  }
+}

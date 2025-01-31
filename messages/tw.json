@@ -1,0 +1,20 @@
+{
+  "Navbar": {
+    "logo": "ANYTECH",
+    "solutions": "解決方案",
+    "anycaas": "AnyCaaS",
+    "anybaas": "AnyBaaS",
+    "anypaas": "AnyPaaS",
+    "services": "服務",
+    "about_us": "關於我們",
+    "language": "TW",
+    "language_options": {
+      "en": "EN (英語)",
+      "th": "TH (泰語)",
+      "id": "ID (印度尼西亞語)",
+      "tw": "TW (繁體中文)"
+    },
+    "contact_us": "聯繫我們",
+    "languageName": "TRADITIONAL CHINESE"
+  }
+}

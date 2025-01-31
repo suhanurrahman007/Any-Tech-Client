@@ -1,0 +1,21 @@
+
+{
+  "Navbar": {
+  "logo": "ANYTECH",
+  "solutions": "โซลูชัน",
+  "anycaas": "AnyCaaS",
+  "anybaas": "AnyBaaS",
+  "anypaas": "AnyPaaS",
+  "services": "บริการ",
+  "about_us": "เกี่ยวกับเรา",
+  "language": "TH",
+  "language_options": {
+    "en": "EN (English)",
+    "th": "TH (ไทย)",
+    "id": "ID (Bahasa Indonesia)",
+    "tw": "TW (繁體中文)"
+  },
+  "contact_us": "ติดต่อเรา",
+  "languageName": "THAI"
+}
+}
