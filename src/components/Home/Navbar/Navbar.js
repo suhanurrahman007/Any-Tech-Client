@@ -1,32 +1,64 @@
 "use client";
-import React, { useState } from "react";
-import { X, ChevronDown, Globe } from "lucide-react";
+import React, { useState, useEffect, useCallback } from "react";
+import { X, ChevronDown, Globe, Menu } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
-
+import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
+import logo from '@/assets/images/logo.svg'
 const Navbar = () => {
   const t = useTranslations("Navbar");
-  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
-  const [isSolutionsOpen, setIsSolutionsOpen] = useState(false);
-  const [isLanguageOpen, setIsLanguageOpen] = useState(false);
+
+  // State Management
+  const [isDrawerOpen, setDrawerOpen] = useState(false);
+  const [isSolutionsOpen, setSolutionsOpen] = useState(false);
+  const [isLanguageOpen, setLanguageOpen] = useState(false);
+
+  // Toggle functions using useCallback for optimization
+  const toggleDrawer = useCallback(() => setDrawerOpen((prev) => !prev), []);
+  const toggleSolutions = useCallback(
+    () => setSolutionsOpen((prev) => !prev),
+    []
+  );
+  const toggleLanguage = useCallback(
+    () => setLanguageOpen((prev) => !prev),
+    []
+  );
+
+  // Prevent background scrolling when drawer is open
+  useEffect(() => {
+    document.body.style.overflow = isDrawerOpen ? "hidden" : "auto";
+  }, [isDrawerOpen]);
 
   return (
     <>
       {/* Navbar */}
-      <nav className="flex items-center justify-between px-6 py-4 bg-[#1F80F0] lg:bg-white shadow-md">
-        {/* Logo */}
-        <div className="text-2xl font-bold text-white">{t("logo")}</div>
+      <nav className="flex items-center lg:bg-opacity-0 justify-between px-6 py-4 bg-[#1F80F0] lg:bg-white">
+        <div className="">
+          <Image
+            width={170}
+            height={170}
+            src="https://cdn.sanity.io/images/6jywt20u/production/ed83f5f1e94efb47572d503f53456dcff902b81c-200x32.svg?w=400&auto=format"
+            alt="Hero Section"
+            className="rounded-lg shadow-lg"
+          />
+        </div>
 
         {/* Desktop Links */}
         <div className="hidden lg:flex items-center space-x-8">
           {/* Solutions Dropdown */}
           <div className="relative group">
-            <button className="flex items-center space-x-2 text-gray-700 hover:text-blue-600">
+            <button
+              className="flex items-center space-x-2 text-gray-700 hover:text-blue-600"
+              aria-haspopup="true"
+              aria-expanded={isSolutionsOpen}
+              onClick={toggleSolutions}
+            >
               <span>{t("solutions")}</span>
               <ChevronDown size={16} />
             </button>
             <div className="absolute hidden group-hover:block bg-white border rounded-md shadow-lg">
-              <ul className="py-2">
+              <ul className="py-2" role="menu">
                 <li className="px-4 py-2 hover:bg-gray-100">{t("anycaas")}</li>
                 <li className="px-4 py-2 hover:bg-gray-100">{t("anybaas")}</li>
                 <li className="px-4 py-2 hover:bg-gray-100">{t("anypaas")}</li>
@@ -43,7 +75,6 @@ const Navbar = () => {
 
         {/* Desktop Language & Contact */}
         <div className="hidden lg:flex items-center space-x-6">
-          {/* Language Selector */}
           <div className="relative group">
             <button className="flex items-center space-x-2 text-gray-700 hover:text-blue-600">
               <Globe size={20} />
@@ -52,26 +83,13 @@ const Navbar = () => {
             </button>
             <div className="absolute hidden group-hover:block bg-white border rounded-md shadow-lg">
               <ul className="py-2">
-                <li className="px-4 py-2 hover:bg-gray-100">
-                  <Link href="/" locale="en">
-                    {t("language_options.en")}
-                  </Link>
-                </li>
-                <li className="px-4 py-2 hover:bg-gray-100">
-                  <Link href="/" locale="th">
-                    {t("language_options.th")}
-                  </Link>
-                </li>
-                <li className="px-4 py-2 hover:bg-gray-100">
-                  <Link href="/" locale="id">
-                    {t("language_options.id")}
-                  </Link>
-                </li>
-                <li className="px-4 py-2 hover:bg-gray-100">
-                  <Link href="/" locale="tw">
-                    {t("language_options.tw")}
-                  </Link>
-                </li>
+                {["en", "th", "id", "tw"].map((locale) => (
+                  <li key={locale} className="px-4 py-2 hover:bg-gray-100">
+                    <Link href="/" locale={locale}>
+                      {t(`language_options.${locale}`)}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
@@ -84,61 +102,63 @@ const Navbar = () => {
         {/* Mobile Menu Button */}
         <button
           className="lg:hidden block text-white hover:text-blue-600"
-          onClick={() => setIsDrawerOpen(!isDrawerOpen)}
+          onClick={toggleDrawer}
+          aria-label="Toggle menu"
         >
-          {isDrawerOpen ? (
-            <X size={28} />
-          ) : (
-            <span className="text-2xl font-bold">≡</span>
-          )}
+          {isDrawerOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       </nav>
 
       {/* Mobile Drawer Background */}
-      <div
-        className={`fixed inset-0 bg-black bg-opacity-0 z-50 transition-opacity ${
-          isDrawerOpen ? "opacity-100 visible" : "opacity-0 invisible"
-        }`}
-        onClick={() => setIsDrawerOpen(false)}
-      ></div>
+      {isDrawerOpen && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-0 z-50 transition-opacity"
+          onMouseDown={toggleDrawer}
+        />
+      )}
 
       {/* Mobile Drawer */}
       <div
-        className={`fixed top-16 left-0 w-full h-full bg-[#1B76E9] shadow-lg z-50 transform ${
+        className={`fixed top-16 left-0 w-full h-full bg-[#1B76E9] shadow-lg z-50 transform transition-transform ${
           isDrawerOpen ? "translate-x-0" : "-translate-x-full"
-        } transition-transform`}
+        }`}
       >
-        {/* Drawer Links */}
         <ul className="p-4 space-y-4">
           {/* Solutions Dropdown */}
           <li>
             <button
               className="flex items-center w-full text-white hover:text-blue-600 justify-between"
-              onClick={() => setIsSolutionsOpen(!isSolutionsOpen)}
+              onClick={toggleSolutions}
+              aria-haspopup="true"
+              aria-expanded={isSolutionsOpen}
             >
               <span>{t("solutions")}</span>
               <ChevronDown
                 size={16}
-                className={isSolutionsOpen ? "rotate-180" : ""}
-                style={{ transition: "transform 0.3s" }}
+                className={`transition-transform ${
+                  isSolutionsOpen ? "rotate-180" : ""
+                }`}
               />
             </button>
-            {isSolutionsOpen && (
-              <ul className="pl-4 mt-2 space-y-2">
-                <li className="text-white hover:text-blue-600">
-                  {t("anycaas")}
-                </li>
-                <li className="text-white hover:text-blue-600">
-                  {t("anybaas")}
-                </li>
-                <li className="text-white hover:text-blue-600">
-                  {t("anypaas")}
-                </li>
-              </ul>
-            )}
+            <AnimatePresence>
+              {isSolutionsOpen && (
+                <motion.ul
+                  initial={{ opacity: 0, height: 0 }}
+                  animate={{ opacity: 1, height: "auto" }}
+                  exit={{ opacity: 0, height: 0 }}
+                  transition={{ duration: 0.3, ease: "easeInOut" }}
+                  className="pl-4 mt-2 space-y-2 text-white overflow-hidden"
+                  role="menu"
+                >
+                  <li>{t("anycaas")}</li>
+                  <li>{t("anybaas")}</li>
+                  <li>{t("anypaas")}</li>
+                </motion.ul>
+              )}
+            </AnimatePresence>
           </li>
 
-          <li className="text-left">
+          <li>
             <button className="text-white hover:text-blue-600">
               {t("services")}
             </button>
@@ -149,58 +169,44 @@ const Navbar = () => {
             </button>
           </li>
 
-          {/* Language Selector */}
+          {/* Language Selector with Smooth Animation */}
           <li className="pt-4">
-            <div className="p-2">
-              <button
-                className="flex items-center w-full text-white hover:text-blue-600 justify-center"
-                onClick={() => setIsLanguageOpen(!isLanguageOpen)}
-              >
-                <div className="flex items-center space-x-2">
-                  <Globe size={20} />
-                  <span>{t("languageName")}</span>
-                </div>
-                <ChevronDown
-                  size={16}
-                  className={isLanguageOpen ? "rotate-180" : ""}
-                  style={{ transition: "transform 0.3s" }}
-                />
-              </button>
-            </div>
-            <div
-              className={`overflow-hidden text-white transition-max-h duration-300 ${
-                isLanguageOpen ? "max-h-72" : "max-h-0"
-              }`}
+            <button
+              className="flex items-center w-full text-white hover:text-blue-600 justify-center"
+              onClick={toggleLanguage}
             >
+              <Globe size={20} />
+              <span>{t("languageName")}</span>
+              <ChevronDown
+                size={16}
+                className={`transition-transform ${
+                  isLanguageOpen ? "rotate-180 ml-2" : ""
+                }`}
+              />
+            </button>
+
+            <AnimatePresence>
               {isLanguageOpen && (
-                <ul className="pl-4  mt-2 space-y-2 py-2">
-                  <li>
-                    <Link href="/" locale="en">
-                      {t("language_options.en")}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/" locale="th">
-                      {t("language_options.th")}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/" locale="id">
-                      {t("language_options.id")}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/" locale="tw">
-                      {t("language_options.tw")}
-                    </Link>
-                  </li>
-                </ul>
+                <motion.ul
+                  initial={{ opacity: 0, height: 0 }}
+                  animate={{ opacity: 1, height: "auto" }}
+                  exit={{ opacity: 0, height: 0 }}
+                  transition={{ duration: 0.3, ease: "easeInOut" }}
+                  className="pl-[173px] mt-2 space-y-2 text-white overflow-hidden"
+                >
+                  {["en", "th", "id", "tw"].map((locale) => (
+                    <li key={locale}>
+                      <Link href="/" locale={locale}>
+                        {t(`language_options.${locale}`)}
+                      </Link>
+                    </li>
+                  ))}
+                </motion.ul>
               )}
-            </div>
+            </AnimatePresence>
           </li>
         </ul>
 
-        {/* Contact Button */}
         <div className="p-4">
           <button className="w-full px-4 py-2 text-white bg-orange-500 rounded-lg hover:bg-orange-600">
             {t("contact_us")}
