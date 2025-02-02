@@ -16,5 +16,40 @@
     },
     "contact_us": "Contact Us",
     "languageName": "ENGLISH"
+  },
+  "Future": {
+    "title": "POWERING THE FUTURE OF FINANCE",
+    "headline": "Uncovering new ways to delight customers",
+    "description1": "AnyTech is revolutionising financial technology by introducing innovative and real-time transaction account processing capabilities, specifically designed for retail financial services.",
+    "description2": "Our modern approach surpasses traditional banking and card processing systems, empowering you with the most advanced technology for lasting success."
+  },
+  "Banner": {
+    "title": "Embrace the future of finance",
+    "description": "Reimagine financial services with AnyTech's open platform, distributed banking solution that powers transformation.",
+    "button": "Reach Out to Us"
+  },
+  "contactUs": {
+    "title": "Contact Us",
+    "subtitle": "Let’s talk",
+    "description": "Have questions about building the next generation of banking experiences, our pricing, or our customer success stories?",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "jobTitle": "Job Title",
+    "companyName": "Company Name",
+    "email": "Email",
+    "message": "Message",
+    "privacyPolicy": "By submitting this form, you confirm that you agree to the processing of your personal data by AnyTech as described in the",
+    "privacyLink": "privacy policy",
+    "submit": "Submit"
+  },
+  "features": {
+    "fullSuiteSolutions": "Full-suite solutions",
+    "simplifyTheComplex": "Simplify the complex",
+    "cuttingEdgeTech": "Cutting-edge tech",
+    "featureDescription1": "Experience the ease of integration across various banking and payment functions with our comprehensive suite of solutions.",
+    "featureDescription2": "Simplify complex processes and optimise your financial operations by leveraging the power of AI, Blockchain, Cloud Computing, and Big Data.",
+    "featureDescription3": "We seamlessly combine cutting-edge technologies, resulting in an unparalleled fintech experience for financial institutions."
   }
+
+
 }

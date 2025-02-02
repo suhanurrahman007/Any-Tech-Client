@@ -16,5 +16,39 @@
     },
     "contact_us": "聯繫我們",
     "languageName": "TRADITIONAL CHINESE"
+  },
+  "Future": {
+    "title": "推動金融的未來",
+    "headline": "探索讓客戶滿意的新方法",
+    "description1": "AnyTech 正在通過引入創新和實時交易賬戶處理能力來革新金融技術，專為零售金融服務設計。",
+    "description2": "我們的現代方法超越了傳統銀行和卡片處理系統，使您能夠使用最先進的技術來獲得長遠成功。"
+  },
+  "Banner": {
+    "title": "擁抱金融的未來",
+    "description": "透過 AnyTech 的開放平台，重新想像金融服務，分散式銀行解決方案推動變革。",
+    "button": "聯絡我們"
+  },
+  "contactUs": {
+    "title": "聯絡我們",
+    "subtitle": "讓我們聊聊",
+    "description": "有關建立下一代銀行體驗、我們的定價或我們的客戶成功故事的問題嗎?",
+    "firstName": "名字",
+    "lastName": "姓氏",
+    "jobTitle": "職稱",
+    "companyName": "公司名稱",
+    "email": "電子郵件",
+    "message": "留言",
+    "privacyPolicy": "提交此表格即表示您確認同意 AnyTech 根據",
+    "privacyLink": "隱私政策",
+    "submit": "提交"
+  },
+  "features": {
+    "fullSuiteSolutions": "全套解決方案",
+    "simplifyTheComplex": "簡化複雜事務",
+    "cuttingEdgeTech": "尖端科技",
+    "featureDescription1": "透過我們全面的解決方案套件，體驗跨越各種銀行和支付功能的整合之便。",
+    "featureDescription2": "透過運用 AI、區塊鏈、雲端計算與大數據的力量，簡化複雜流程並優化您的金融運營。",
+    "featureDescription3": "我們將尖端科技無縫結合，為金融機構提供無與倫比的金融科技體驗。"
   }
+
 }

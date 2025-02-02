@@ -5,7 +5,8 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
-import logo from '@/assets/images/logo.svg'
+import { FaAngleRight } from "react-icons/fa";
+
 const Navbar = () => {
   const t = useTranslations("Navbar");
 
@@ -34,7 +35,7 @@ const Navbar = () => {
     <>
       {/* Navbar */}
       <nav className="flex items-center lg:bg-opacity-0 justify-between px-6 py-4 bg-[#1F80F0] lg:bg-white">
-        <div className="">
+        <Link href={'/'}>
           <Image
             width={170}
             height={170}
@@ -42,14 +43,14 @@ const Navbar = () => {
             alt="Hero Section"
             className="rounded-lg shadow-lg"
           />
-        </div>
+        </Link>
 
         {/* Desktop Links */}
         <div className="hidden lg:flex items-center space-x-8">
           {/* Solutions Dropdown */}
           <div className="relative group">
             <button
-              className="flex items-center space-x-2 text-gray-700 hover:text-blue-600"
+              className="flex items-center text-lg space-x-2 text-white"
               aria-haspopup="true"
               aria-expanded={isSolutionsOpen}
               onClick={toggleSolutions}
@@ -59,32 +60,44 @@ const Navbar = () => {
             </button>
             <div className="absolute hidden group-hover:block bg-white border rounded-md shadow-lg">
               <ul className="py-2" role="menu">
-                <li className="px-4 py-2 hover:bg-gray-100">{t("anycaas")}</li>
-                <li className="px-4 py-2 hover:bg-gray-100">{t("anybaas")}</li>
-                <li className="px-4 py-2 hover:bg-gray-100">{t("anypaas")}</li>
+                <li className="px-4 py-2 text-black hover:underline">
+                  {t("anycaas")}
+                </li>
+                <li className="px-4 py-2 text-black hover:underline">
+                  {t("anybaas")}
+                </li>
+                <li className="px-4 py-2 text-black hover:underline">
+                  {t("anypaas")}
+                </li>
               </ul>
             </div>
           </div>
-          <button className="text-gray-700 hover:text-blue-600">
+          <Link href={"/services"} className="text-white text-lg hover:underline hover:shadow-lg transition-all duration-300">
             {t("services")}
-          </button>
-          <button className="text-gray-700 hover:text-blue-600">
+          </Link>
+          <Link
+            href="/about"
+            className="text-white text-lg hover:underline hover:shadow-lg transition-all duration-300"
+          >
             {t("about_us")}
-          </button>
+          </Link>
         </div>
 
         {/* Desktop Language & Contact */}
         <div className="hidden lg:flex items-center space-x-6">
           <div className="relative group">
-            <button className="flex items-center space-x-2 text-gray-700 hover:text-blue-600">
+            <button className="flex items-center border px-3 py-3 font-bold rounded-full space-x-2 text-white hover:text-blue-300">
               <Globe size={20} />
               <span>{t("language")}</span>
               <ChevronDown size={16} />
             </button>
-            <div className="absolute hidden group-hover:block bg-white border rounded-md shadow-lg">
+            <div className="absolute hidden group-hover:block bg-white text-black border rounded-md shadow-lg">
               <ul className="py-2">
                 {["en", "th", "id", "tw"].map((locale) => (
-                  <li key={locale} className="px-4 py-2 hover:bg-gray-100">
+                  <li
+                    key={locale}
+                    className="px-4 py-2 text-black text-md w-32 hover:bg-blue-400"
+                  >
                     <Link href="/" locale={locale}>
                       {t(`language_options.${locale}`)}
                     </Link>
@@ -94,14 +107,18 @@ const Navbar = () => {
             </div>
           </div>
 
-          <button className="px-4 py-2 text-white bg-orange-500 rounded-lg hover:bg-orange-600">
+          <Link
+            href={"/contactUs"}
+            className="px-6 py-3 flex items-center gap-1 text-white border rounded-md font-bold transition-all duration-300 hover:text-blue-600 hover:bg-white"
+          >
             {t("contact_us")}
-          </button>
+            <FaAngleRight />
+          </Link>
         </div>
 
         {/* Mobile Menu Button */}
         <button
-          className="lg:hidden block text-white hover:text-blue-600"
+          className="lg:hidden block text-white hover:text-blue-300"
           onClick={toggleDrawer}
           aria-label="Toggle menu"
         >
@@ -119,7 +136,7 @@ const Navbar = () => {
 
       {/* Mobile Drawer */}
       <div
-        className={`fixed top-16 left-0 w-full h-full bg-[#1B76E9] shadow-lg z-50 transform transition-transform ${
+        className={`fixed top-14 left-0 w-full h-full bg-[#1B76E9] shadow-lg z-50 transform transition-transform ${
           isDrawerOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
@@ -127,7 +144,7 @@ const Navbar = () => {
           {/* Solutions Dropdown */}
           <li>
             <button
-              className="flex items-center w-full text-white hover:text-blue-600 justify-between"
+              className="flex items-center w-full text-white hover:text-blue-300 justify-between"
               onClick={toggleSolutions}
               aria-haspopup="true"
               aria-expanded={isSolutionsOpen}
@@ -159,12 +176,12 @@ const Navbar = () => {
           </li>
 
           <li>
-            <button className="text-white hover:text-blue-600">
+            <button className="text-white hover:text-blue-300">
               {t("services")}
             </button>
           </li>
           <li>
-            <button className="text-white hover:text-blue-600">
+            <button className="text-white hover:text-blue-300">
               {t("about_us")}
             </button>
           </li>
@@ -172,7 +189,7 @@ const Navbar = () => {
           {/* Language Selector with Smooth Animation */}
           <li className="pt-4">
             <button
-              className="flex items-center w-full text-white hover:text-blue-600 justify-center"
+              className="flex items-center gap-2 w-full text-white hover:text-blue-300 justify-center"
               onClick={toggleLanguage}
             >
               <Globe size={20} />

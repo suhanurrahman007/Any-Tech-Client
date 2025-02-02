@@ -16,5 +16,39 @@
     },
     "contact_us": "Hubungi Kami",
     "languageName": "BAHASA INDONESIA"
+  },
+  "Future": {
+    "title": "MENDORONG MASA DEPAN KEUANGAN",
+    "headline": "Menemukan cara baru untuk menyenangkan pelanggan",
+    "description1": "AnyTech merevolusi teknologi keuangan dengan memperkenalkan kemampuan pemrosesan akun transaksi real-time yang inovatif, dirancang khusus untuk layanan keuangan ritel.",
+    "description2": "Pendekatan modern kami melampaui sistem perbankan tradisional dan pemrosesan kartu, memberdayakan Anda dengan teknologi paling canggih untuk kesuksesan jangka panjang."
+  },
+  "Banner": {
+    "title": "Rangkul masa depan keuangan",
+    "description": "Bayangkan kembali layanan keuangan dengan platform terbuka AnyTech, solusi perbankan terdistribusi yang mendorong transformasi.",
+    "button": "Hubungi Kami"
+  },
+  "contactUs": {
+    "title": "Hubungi Kami",
+    "subtitle": "Mari berbicara",
+    "description": "Punya pertanyaan tentang membangun pengalaman perbankan generasi berikutnya, harga kami, atau kisah sukses pelanggan kami?",
+    "firstName": "Nama Depan",
+    "lastName": "Nama Belakang",
+    "jobTitle": "Jabatan",
+    "companyName": "Nama Perusahaan",
+    "email": "Email",
+    "message": "Pesan",
+    "privacyPolicy": "Dengan mengirimkan formulir ini, Anda menyetujui pemrosesan data pribadi Anda oleh AnyTech sebagaimana dijelaskan dalam",
+    "privacyLink": "kebijakan privasi",
+    "submit": "Kirim"
+  },
+  "features": {
+    "fullSuiteSolutions": "Solusi lengkap",
+    "simplifyTheComplex": "Permudah yang kompleks",
+    "cuttingEdgeTech": "Teknologi terdepan",
+    "featureDescription1": "Rasakan kemudahan integrasi di berbagai fungsi perbankan dan pembayaran dengan rangkaian solusi komprehensif kami.",
+    "featureDescription2": "Permudah proses kompleks dan optimalkan operasi keuangan Anda dengan memanfaatkan kekuatan AI, Blockchain, Cloud Computing, dan Big Data.",
+    "featureDescription3": "Kami menggabungkan teknologi terkini untuk menciptakan pengalaman fintech yang tak tertandingi bagi lembaga keuangan."
   }
+
 }
