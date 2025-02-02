@@ -3,70 +3,39 @@ import { useState, useEffect } from "react";
 import { Tabs, TabList, Tab, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css"; // Default styles
 import Image from "next/image"; // Optimized Next.js images
+import { useTranslations } from "next-intl";
 import img1 from "@/assets/images/c1.avif";
 import img2 from "@/assets/images/c2.avif";
 import img3 from "@/assets/images/c3.avif";
 import img4 from "@/assets/images/c4.avif";
 
-const tabsData = [
-  {
-    title: "Customer focused",
-    titleBg: "Purpose-built financial services",
-    description1:
-      "Elevate customer experience and achieve agile financial product innovation with the world’s first.",
-    description2:
-      "Experience the advantages of integrated retail financial services technology, real-time analysis of transactional behaviour.",
-    image: img1,
-  },
-  {
-    title: "Agile and adaptable",
-    titleBg: "Agile and adaptable for growth",
-    description1:
-      "Adapt quickly to market changes and build scalable systems with cloud technology.",
-    description2:
-      "Leverage cloud-based services for greater flexibility and reduced infrastructure costs.",
-    image: img2,
-  },
-  {
-    title: "Compliance ready",
-    titleBg: "Manage compliance with ease",
-    description1:
-      "Stay ahead of regulatory changes with a fully compliant and secure system.",
-    description2:
-      "Maintain security and privacy with built-in compliance features, ensuring you meet industry standards.",
-    image: img3,
-  },
-  {
-    title: "Secure and safe",
-    titleBg: "Highly Secure and safe",
-    description1:
-      "Protect your data and infrastructure with top-notch security protocols.",
-    description2:
-      "Our platform offers enhanced safety features to prevent cyber threats and unauthorized access.",
-    image: img4,
-  },
-];
+const images = [img1, img2, img3, img4];
 
 const Technology = () => {
+  const t = useTranslations("technology");
+  const tabsData = t.raw("tabs").map((tab, index) => ({
+    ...tab,
+    image: images[index],
+  }));
+
   const [activeIndex, setActiveIndex] = useState(0);
   const tabCount = tabsData.length;
 
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveIndex((prev) => (prev + 1) % tabCount);
-    }, 3000); // Auto-switch every 3 seconds
-
+    }, 3000);
     return () => clearInterval(interval);
   }, []);
 
   return (
     <div className="px-6 lg:px-10 my-7">
       <div className="text-center mb-12">
-        <h2 className="lg:text-lg text-sm  font-semibold text-blue-600 uppercase tracking-wider font-sans">
-          TECHNOLOGY BUILT FOR YOU
+        <h2 className="lg:text-lg text-sm font-semibold text-blue-600 uppercase tracking-wider font-sans">
+          {t("title")}
         </h2>
         <h1 className="lg:text-6xl text-2xl font-semibold text-blue-900 mt-2 mb-8 text-center font-sans">
-          The future of finance
+          {t("subtitle")}
         </h1>
       </div>
       <Tabs
@@ -103,7 +72,9 @@ const Technology = () => {
                   <h3 className="text-5xl text-justify font-semibold text-[#0b305b]">
                     {tab.titleBg}
                   </h3>
-                  <p className="text-[#0b305b] font-bold text-lg">{tab.description1}</p>
+                  <p className="text-[#0b305b] font-bold text-lg">
+                    {tab.description1}
+                  </p>
                   <p className="text-gray-600 text-lg">{tab.description2}</p>
                 </div>
 

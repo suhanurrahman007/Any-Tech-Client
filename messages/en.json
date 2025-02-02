@@ -49,7 +49,47 @@
     "featureDescription1": "Experience the ease of integration across various banking and payment functions with our comprehensive suite of solutions.",
     "featureDescription2": "Simplify complex processes and optimise your financial operations by leveraging the power of AI, Blockchain, Cloud Computing, and Big Data.",
     "featureDescription3": "We seamlessly combine cutting-edge technologies, resulting in an unparalleled fintech experience for financial institutions."
+  },
+
+  "stats": {
+    "trustedBy": "TRUSTED BY THE BEST",
+    "yearsOfExperience": "Years of Experience",
+    "financialInstitutions": "Financial Institutions",
+    "customersEach": "Customers Each"
+  },
+  "technology": {
+    "title": "Technology Built for You",
+    "subtitle": "The future of finance",
+    "tabs": [
+      {
+        "title": "Customer focused",
+        "titleBg": "Purpose-built financial services",
+        "description1": "Elevate customer experience and achieve agile financial product innovation with the world’s first.",
+        "description2": "Experience the advantages of integrated retail financial services technology, real-time analysis of transactional behaviour."
+      },
+      {
+        "title": "Agile and adaptable",
+        "titleBg": "Agile and adaptable for growth",
+        "description1": "Adapt quickly to market changes and build scalable systems with cloud technology.",
+        "description2": "Leverage cloud-based services for greater flexibility and reduced infrastructure costs."
+      },
+      {
+        "title": "Compliance ready",
+        "titleBg": "Manage compliance with ease",
+        "description1": "Stay ahead of regulatory changes with a fully compliant and secure system.",
+        "description2": "Maintain security and privacy with built-in compliance features, ensuring you meet industry standards."
+      },
+      {
+        "title": "Secure and safe",
+        "titleBg": "Highly Secure and safe",
+        "description1": "Protect your data and infrastructure with top-notch security protocols.",
+        "description2": "Our platform offers enhanced safety features to prevent cyber threats and unauthorized access."
+      }
+    ]
+  },
+  "human_centered_innovation": {
+    "title": "Our Philosophy",
+    "subtitle": "Human-centred innovation",
+    "image_alt": "Hero Section"
   }
-
-
 }

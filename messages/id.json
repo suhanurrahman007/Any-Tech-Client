@@ -49,6 +49,47 @@
     "featureDescription1": "Rasakan kemudahan integrasi di berbagai fungsi perbankan dan pembayaran dengan rangkaian solusi komprehensif kami.",
     "featureDescription2": "Permudah proses kompleks dan optimalkan operasi keuangan Anda dengan memanfaatkan kekuatan AI, Blockchain, Cloud Computing, dan Big Data.",
     "featureDescription3": "Kami menggabungkan teknologi terkini untuk menciptakan pengalaman fintech yang tak tertandingi bagi lembaga keuangan."
-  }
+  },
 
+  "stats": {
+    "trustedBy": "DIPERCAYA OLEH YANG TERBAIK",
+    "yearsOfExperience": "Tahun Pengalaman",
+    "financialInstitutions": "Lembaga Keuangan",
+    "customersEach": "Pelanggan Tiap"
+  },
+  "technology": {
+    "title": "Teknologi Dibangun untuk Anda",
+    "subtitle": "Masa depan keuangan",
+    "tabs": [
+      {
+        "title": "Berfokus pada pelanggan",
+        "titleBg": "Layanan keuangan yang dirancang khusus",
+        "description1": "Tingkatkan pengalaman pelanggan dan ciptakan inovasi produk keuangan yang lebih fleksibel.",
+        "description2": "Rasakan manfaat teknologi layanan keuangan ritel yang terintegrasi dan analisis perilaku transaksi secara real-time."
+      },
+      {
+        "title": "Lincah dan mudah beradaptasi",
+        "titleBg": "Lincah dan mudah beradaptasi untuk pertumbuhan",
+        "description1": "Beradaptasi dengan cepat terhadap perubahan pasar dan bangun sistem yang dapat diskalakan dengan teknologi cloud.",
+        "description2": "Gunakan layanan berbasis cloud untuk fleksibilitas lebih besar dan biaya infrastruktur yang lebih rendah."
+      },
+      {
+        "title": "Siap untuk kepatuhan",
+        "titleBg": "Kelola kepatuhan dengan mudah",
+        "description1": "Selalu berada di depan perubahan peraturan dengan sistem yang aman dan patuh.",
+        "description2": "Pertahankan keamanan dan privasi dengan fitur kepatuhan bawaan untuk memenuhi standar industri."
+      },
+      {
+        "title": "Aman dan terjamin",
+        "titleBg": "Keamanan tinggi dan perlindungan penuh",
+        "description1": "Lindungi data dan infrastruktur Anda dengan protokol keamanan terbaik.",
+        "description2": "Platform kami menawarkan fitur keselamatan yang ditingkatkan untuk mencegah ancaman siber dan akses tidak sah."
+      }
+    ]
+  },
+  "human_centered_innovation": {
+    "title": "Filosofi Kami",
+    "subtitle": "Inovasi yang berpusat pada manusia",
+    "image_alt": "Bagian utama"
+  }
 }

@@ -49,6 +49,46 @@
     "featureDescription1": "透過我們全面的解決方案套件，體驗跨越各種銀行和支付功能的整合之便。",
     "featureDescription2": "透過運用 AI、區塊鏈、雲端計算與大數據的力量，簡化複雜流程並優化您的金融運營。",
     "featureDescription3": "我們將尖端科技無縫結合，為金融機構提供無與倫比的金融科技體驗。"
+  },
+  "stats": {
+    "trustedBy": "獲得最佳信任",
+    "yearsOfExperience": "經驗年數",
+    "financialInstitutions": "金融機構",
+    "customersEach": "每個客戶"
+  },
+  "technology": {
+    "title": "為您打造的科技",
+    "subtitle": "金融的未來",
+    "tabs": [
+      {
+        "title": "以客戶為中心",
+        "titleBg": "專為金融服務設計",
+        "description1": "提升客戶體驗，並透過全球首創技術實現靈活的金融產品創新。",
+        "description2": "體驗整合零售金融科技的優勢，並即時分析交易行為。"
+      },
+      {
+        "title": "靈活且適應性強",
+        "titleBg": "靈活且適應增長",
+        "description1": "迅速適應市場變化，並透過雲端技術構建可擴展的系統。",
+        "description2": "利用雲端服務，提高靈活性並降低基礎設施成本。"
+      },
+      {
+        "title": "符合合規標準",
+        "titleBg": "輕鬆管理合規",
+        "description1": "使用完全合規且安全的系統，保持領先於監管變更。",
+        "description2": "內建合規功能確保安全與隱私，滿足行業標準。"
+      },
+      {
+        "title": "安全且可靠",
+        "titleBg": "高安全性與保障",
+        "description1": "透過頂級安全協議保護您的數據與基礎設施。",
+        "description2": "我們的平台提供強化的安全功能，防止網絡威脅與未授權訪問。"
+      }
+    ]
+  },
+  "human_centered_innovation": {
+    "title": "我們的理念",
+    "subtitle": "以人為本的創新",
+    "image_alt": "主視覺區"
   }
-
 }

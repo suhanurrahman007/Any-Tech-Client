@@ -1,46 +1,54 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { FaAngleRight, FaPlus } from "react-icons/fa";
+import { useTranslations } from "next-intl";
 
 const Stats = () => {
+  const t = useTranslations("stats");
+
   const statsData = [
-    { icon: <FaAngleRight />, value: 20, label: "Years of Experience" },
-    { icon: <FaPlus />, value: 20, label: "Financial Institutions" },
     {
-      icon: <FaAngleRight />,
+      icon: <FaAngleRight aria-hidden="true" />,
+      value: 20,
+      label: t("yearsOfExperience"),
+    },
+    {
+      icon: <FaPlus aria-hidden="true" />,
+      value: 50,
+      label: t("financialInstitutions"),
+    },
+    {
+      icon: <FaAngleRight aria-hidden="true" />,
       value: 200,
       suffix: "M",
-      label: "Customers Each",
+      label: t("customersEach"),
     },
   ];
 
-  // State for animated numbers
   const [counts, setCounts] = useState(statsData.map(() => 0));
-  const [isHovered, setIsHovered] = useState(false);
 
-  // Start the counter when hovered
   useEffect(() => {
-    if (isHovered) {
-      const interval = setInterval(() => {
-        setCounts((prevCounts) =>
-          prevCounts.map((count, i) =>
-            count < statsData[i].value ? count + 1 : statsData[i].value
+    statsData.forEach((stat, index) => {
+      let start = 0;
+      const step = Math.ceil(stat.value / 50); // Adjust speed dynamically
+
+      const timer = setInterval(() => {
+        start += step;
+        setCounts((prev) =>
+          prev.map((c, i) =>
+            i === index ? (start >= stat.value ? stat.value : start) : c
           )
         );
-      }, 30); // Adjust speed
 
-      return () => clearInterval(interval);
-    }
-  }, [isHovered]);
+        if (start >= stat.value) clearInterval(timer);
+      }, 30);
+    });
+  }, []);
 
   return (
-    <div
-      className="py-10"
-      onMouseEnter={() => setIsHovered(true)} // Trigger on hover
-      onMouseLeave={() => setIsHovered(false)} // Stop on hover out
-    >
+    <div className="py-10">
       <h2 className="lg:text-lg text-sm font-semibold text-blue-600 text-center uppercase tracking-wider font-sans">
-        TRUSTED BY THE BEST
+        {t("trustedBy")}
       </h2>
       <div className="lg:flex px-5 py-3 lg:px-16 justify-center items-center text-center">
         {statsData.map((stat, index) => (
