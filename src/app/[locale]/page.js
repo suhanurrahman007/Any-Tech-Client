@@ -12,6 +12,7 @@ import { motion } from "framer-motion";
 import FeaturesSection from "@/components/Home/FeaturesSection/FeaturesSection";
 import Technology from "@/components/Home/Technology/Technology";
 import IconAds from "@/components/Home/IconAds/IconAds";
+import Stats from "@/components/Home/Stats/Stats";
 
 export default function Home() {
   return (
@@ -92,6 +93,7 @@ export default function Home() {
       <HumanCentredInnovation />
       <FeaturesSection />
       <Technology />
+      <Stats />
       <IconAds />
     </div>
   );
