@@ -1,8 +1,11 @@
 import { Link } from "@/i18n/routing";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import React from "react";
 
 const Footer = () => {
+  const t = useTranslations("footer"); // Fetch translations from JSON
+
   return (
     <footer className="bg-[#0B2545] text-white">
       {/* Top Section */}
@@ -19,15 +22,15 @@ const Footer = () => {
           </Link>
         </div>
         <div className="flex items-center space-x-5 lg:space-x-8 text-[#0ACFFE] px-7">
-          <span>Our Solutions</span>
+          <span>{t("title")}</span>
           <hr className="h-14 w-[1px] bg-blue-700 border opacity-30" />
-          <Link href={"anyCaaS"} className="hover:text-blue-600 lg:font-bold">
+          <Link href={"/anycaas"} className="hover:text-blue-600 lg:font-bold">
             AnyCaaS
           </Link>
-          <Link href={"anyCaaS"} className="hover:text-blue-600 lg:font-bold">
+          <Link href={"/anybaas"} className="hover:text-blue-600 lg:font-bold">
             AnyBaaS
           </Link>
-          <Link href={"anyCaaS"} className="hover:text-blue-600 lg:font-bold">
+          <Link href={"/anypaas"} className="hover:text-blue-600 lg:font-bold">
             AnyPaaS
           </Link>
         </div>
@@ -35,12 +38,8 @@ const Footer = () => {
 
       {/* Bottom Section */}
       <div className="lg:flex lg:justify-between justify-center items-center gap-2 p-5 lg:px-14 py-4 text-xs lg:text-sm bg-[#081C33]">
-        <span className="text-[#0ACFFE]">
-          ©2023 All rights reserved. Any Technology Pte Ltd.
-        </span>
-        <span className="text-[#0ACFFE]">
-          Privacy Policy
-        </span>
+        <span className="text-[#0ACFFE]">{t("description")}</span>
+        <span className="text-[#0ACFFE]">{t("title1")}</span>
       </div>
     </footer>
   );

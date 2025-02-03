@@ -1,10 +1,14 @@
 "use client";
 import React from "react";
 import { CheckCircle } from "lucide-react";
+import { Helmet } from "react-helmet";
 
 const FormSuccess = () => {
   return (
     <div className="flex items-center justify-center h-screen bg-gray-900">
+      <Helmet>
+        <title>Success | Any Tech</title>
+      </Helmet>
       <div className="text-center">
         <CheckCircle className="mx-auto text-green-500" size={100} />
         <h1 className="mt-4 text-2xl font-semibold text-green-400">

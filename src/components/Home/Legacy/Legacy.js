@@ -4,8 +4,12 @@ import Image from "next/image";
 import bannerBg from "@/assets/images/WaveLinesDesktop3.svg";
 import bannerBg3 from "@/assets/images/WaveLinesDesktop1.svg";
 import bannerBg4 from "@/assets/images/WaveLinesDesktop2.svg";
+import { Link } from "@/i18n/routing";
+import { useTranslations } from "next-intl";
 
 const Legacy = () => {
+    const t = useTranslations("legacy"); // Fetch translations from JSON
+  
   return (
     <div className="relative bg-gradient-to-r from-blue-700 to-blue-500 overflow-hidden">
       {/* Background Layer 1 - Floating Animation */}
@@ -79,16 +83,18 @@ const Legacy = () => {
       <div className="relative px-4 py-10 sm:px-6 sm:py-14 md:px-10 lg:px-16">
         <div className="mx-auto lg:py-20 space-y-7 text-center md:text-left">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white">
-            Legacy no longer
+            {t("title")}
           </h1>
           <p className="mt-4 text-base sm:text-lg text-white text-center md:text-left">
-            Talk to us to find out how we can transform your organisation for
-            the future.
+            {t("description")}
           </p>
           <div className="mt-6 flex justify-center md:justify-start">
-            <button className="px-10 sm:px-12 md:px-16 py-3 text-base sm:text-lg font-semibold text-white bg-orange-500 rounded-md hover:bg-orange-600 transition">
-              Contact Us &rsaquo;
-            </button>
+            <Link
+              href={"/contactUs"}
+              className="px-10 sm:px-12 md:px-16 py-3 text-base sm:text-lg font-semibold text-white bg-orange-500 rounded-md hover:bg-orange-600 transition"
+            >
+              {t("button")}
+            </Link>
           </div>
         </div>
       </div>

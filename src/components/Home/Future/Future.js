@@ -14,9 +14,9 @@ export default function Future() {
   const t = useTranslations("Future"); // Get translations
 
   return (
-    <div className="relative flex flex-wrap gap-5 md:gap-0 justify-between items-center px-6 sm:px-8 md:px-12 lg:px-16 py-6 bg-white">
+    <div className="relative flex flex-wrap gap-5 md:gap-0 justify-between items-center px-6 sm:px-8 md:px-5 lg:px-16 py-6 bg-white">
       {/* Left Content */}
-      <div className="max-w-lg sm:w-full md:w-1/2 order-2 lg:order-1 mb-8 lg:mb-0 z-10">
+      <div className="max-w-lg sm:w-full md:w-1/2 order-2 lg:order-1 mb-8 lg:mb-0 z-10 p-5">
         <p className="lg:text-2xl text-xl md:text-lg font-medium text-blue-500 uppercase mb-4">
           {t("title")}
         </p>

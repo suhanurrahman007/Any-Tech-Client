@@ -2,9 +2,16 @@ import React from "react";
 import { useTranslations } from "next-intl";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-
+import "aos/dist/aos.css"; 
+import Aos from "aos";
+import { useEffect } from "react";
 
 const FeaturesSection = () => {
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+    });
+  }, []);
   const t = useTranslations("features"); // Fetch translations for features section
 
   const features = [
@@ -31,6 +38,8 @@ const FeaturesSection = () => {
       <div className="hidden lg:grid grid-cols-1 md:grid-cols-3 gap-6">
         {features.map((feature, index) => (
           <div
+            data-aos="fade-up"
+            data-aos-duration="2000"
             key={index}
             className="p-10 bg-[#F8FCFF] rounded-2xl space-y-4 flex flex-col"
           >

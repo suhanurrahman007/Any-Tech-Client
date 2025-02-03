@@ -91,5 +91,112 @@
     "title": "Our Philosophy",
     "subtitle": "Human-centred innovation",
     "image_alt": "Hero Section"
+  },
+  "BannerService": {
+    "minTitle": "OUR SERVICES",
+    "title": "Reimagining banking solutions",
+    "description": "Enabling financial institutions to create unparalleled customer experiences."
+  },
+  "FutureService": {
+    "title": "What We Do",
+    "headline": "The power of data",
+    "description1": "In today's rapidly evolving financial landscape, banks and financial institutions face unprecedented challenges. At AnyTech, we understand the critical need for continuous innovation and strategic decision-making in order to thrive.",
+    "description2": "With our global perspective and cutting-edge solutions, we are here to help you create unparalleled customer experiences that will set you apart from the competition. Embark on a journey of transformation with AnyTech—one that will redefine what’s possible for your institution."
+  },
+  "featuresSection": {
+    "fullSuiteSolutions": "Consult",
+    "simplifyTheComplex": "Implement",
+    "cuttingEdgeTech": "Operate",
+    "featureDescription1": "Our breadth of consulting expertise spans from applying the latest financial technological innovations to implementing risk-control strategies.",
+    "featureDescription2": "Simplify complex processes and optimise your financial operations by leveraging the power of AI, Blockchain, Cloud Computing, and Big Data.",
+    "featureDescription3": "We provide a full suite of operational and support services that continue throughout the product life cycle."
+  },
+  "Consult": {
+    "title": "Taking the First Step",
+    "headline": "Consult",
+    "description1": "Taking the leap towards digital transformation with the ambition of delivering augmented value in financial services can be daunting.",
+    "description2": "Tap on the vast experience and deep knowledge of our experts. Our breadth of consulting expertise spans from applying the latest financial technological innovations to implementing risk-control strategies."
+  },
+  "Implement": {
+    "title": "seamless execution",
+    "headline": "Implement",
+    "description1": "Ensuring sustainable success stems from the ability to seamlessly execute your digital transformation strategies.",
+    "description2": "Combining deep technological expertise and a proven track record, we design and implement custom solutions for financial institutions that drive long-term success."
+  },
+  "NewSetup": {
+    "fullSuiteSolutions": "New Setup",
+    "simplifyTheComplex": "System Upgrade",
+    "cuttingEdgeTech": "System Migration",
+    "featureDescription1": "Create banking infrastructure from the ground up to better serve your needs and your customers.",
+    "featureDescription2": "Modernise your current infrastructure to overcome challenges posed by legacy systems.",
+    "featureDescription3": "Seamlessly migrate your data and integrations to newer systems without business interruptions."
+  },
+  "Operate": {
+    "title": "Long-Term Efficiency",
+    "headline": "Operate",
+    "description1": "Setting up operational efficiencies to deliver the promised value to your customers is pivotal to long-term growth.",
+    "description2": "We provide a full suite of operational and support services that continue throughout the product life cycle."
+  },
+  "Support": {
+    "fullSuiteSolutions": "Operational Support",
+    "simplifyTheComplex": "Personalised Services",
+    "cuttingEdgeTech": "24/7 Technical Support",
+    "featureDescription1": "Deploy our team to manage and maintain your AnyTech solutions so that you can focus on your core business and strategic initiatives.",
+    "featureDescription2": "From developing new business opportunities to running backend IT maintenance, our team can also provide any other support you require.",
+    "featureDescription3": "Our customer success team is available around the clock to address your enquiries and resolve any issues that may arise. "
+  },
+  "Ads": {
+    "title": "Trusted by the best"
+  },
+  "BannerAbout": {
+    "minTitle": "ABOUT US",
+    "title": "Paving the way ahead for finance",
+    "description": "Paving the way ahead for finance"
+  },
+  "Story": {
+    "title": "OUR STORY",
+    "headline": "Building the future today",
+    "description1": "Founded in January 2020, Any Technology is a Singapore-based fintech enterprise committed to helping the global financial services industry reimagine banking and payment services."
+  },
+  "Experts": {
+    "fullSuiteSolutions": "Experts in technology and finance",
+    "simplifyTheComplex": "Empowerment through technology",
+    "cuttingEdgeTech": "Understanding evolving needs",
+    "featureDescription1": "With our team's deep expertise in the finance and tech sectors, we are catalysts for change, paving the way for innovation and strategic reorientation, shaping the future of finance.",
+    "featureDescription2": "Empowering more than 40 financial institutions to transform in a digital-first world, our innovative platform enables banks and financial institutions to develop customer-centric financial products and offerings.",
+    "featureDescription3": "By staying at the forefront of technology and understanding the evolving needs of the industry, we strive to provide cutting-edge solutions that drive efficiency, enhance user experiences, and enable financial inclusion."
+  },
+  "Empowering": {
+    "title": "Empowering more than",
+    "minTitle": "40 financial institutions",
+    "maxTitle": "to transform in a digital-first world."
+  },
+  "Mission": {
+    "minTitle": "Our Mission",
+    "title": "Redefining tomorrow",
+    "description": "To redefine global finance by empowering institutions with technology that drives value and growth."
+  },
+  "start": {
+    "title": "Start your transformation",
+    "description": "We are ready to serve as strategic partners to provide your organisation with the support you need.",
+    "button": "Talk to Us"
+  },
+  "Solution": {
+    "fullSuiteSolutions": "AnyCaaS",
+    "simplifyTheComplex": "AnyBaaS",
+    "cuttingEdgeTech": "AnyPaas",
+    "featureDescription1": "Reimagine your card programmes with our Cards-as-a-Service (CaaS) solution. Streamline card management, deliver superior customer experiences, and more.",
+    "featureDescription2": "Dive into the future of banking with our Banking-as-a-Service (BaaS) platform that gives you the tools you need to adapt and scale in today’s fast-paced digital environment.",
+    "featureDescription3": "Enhance your payment processing capabilities with our Payment-as-a-Service (PaaS) solution. Experience scalable and secure infrastructure that handles transactions with ease."
+  },
+  "legacy": {
+    "title": "Legacy no longer",
+    "description": "Talk to us to find out how we can transform your organisation for the future.",
+    "button": "Contact Us"
+  },
+  "footer": {
+    "title": "Our Solutions",
+    "title1": "Privacy Policy",
+    "description": "©2025 All rights reserved. Any Technology Pte Ltd."
   }
 }

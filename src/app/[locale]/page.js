@@ -15,10 +15,14 @@ import IconAds from "@/components/Home/IconAds/IconAds";
 import Stats from "@/components/Home/Stats/Stats";
 import Footer from "@/components/Home/Footer/Footer";
 import Legacy from "@/components/Home/Legacy/Legacy";
+import { Helmet } from "react-helmet";
 
 export default function Home() {
   return (
     <div className="">
+      <Helmet>
+        <title>Home Page | Any Tech</title>
+      </Helmet>
       {/* Background Wrapper */}
       <div className="relative w-full h-screen text-white">
         {/* Background Images with Layering & Opacity */}
@@ -36,7 +40,10 @@ export default function Home() {
 
             {/* Top-Left Gradient Effect */}
             <div className="absolute top-[-150px] left-[-220px] w-full h-full opacity-80 bg-gradient-to-b from-[#005cc4] to-[#2a7ce0] rotate-[-45deg] pointer-events-none"></div>
+            {/* Top-Left Gradient Effect */}
+            <div className="absolute top-[-150px] left-[-220px] w-full h-full opacity-80 bg-gradient-to-b from-[#005cc4] to-[#2a7ce0] rotate-[-45deg] pointer-events-none"></div>
 
+            <div className="absolute w-full h-72 opacity-80 bg-gradient-to-b from-blue-700 pointer-events-none"></div>
             <div className="absolute w-full h-72 opacity-80 bg-gradient-to-b from-blue-700 pointer-events-none"></div>
           </div>
 

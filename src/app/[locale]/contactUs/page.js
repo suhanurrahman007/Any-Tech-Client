@@ -6,10 +6,14 @@ import bannerBg3 from "@/assets/images/WaveLinesDesktop1.svg";
 import { motion } from "framer-motion";
 import ContentBanner from "@/components/ContactUs/ContactBanner/ContactBanner";
 import ContentForm from "@/components/ContactUs/ContactForm/ContactForm";
+import { Helmet } from "react-helmet";
 
 export default function ContentUs() {
   return (
     <div className="">
+      <Helmet>
+        <title>Contact Us | Any Tech</title>
+      </Helmet>
       {/* Background Wrapper */}
       <div className="relative w-full h-screen text-white">
         {/* Background Images with Layering & Opacity */}

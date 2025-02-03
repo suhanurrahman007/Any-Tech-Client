@@ -91,5 +91,112 @@
     "title": "Filosofi Kami",
     "subtitle": "Inovasi yang berpusat pada manusia",
     "image_alt": "Bagian utama"
+  },
+  "BannerService": {
+    "minTitle": "LAYANAN KAMI",
+    "title": "Membayangkan ulang solusi perbankan",
+    "description": "Memberdayakan institusi keuangan untuk menciptakan pengalaman pelanggan yang tak tertandingi."
+  },
+  "FutureService": {
+    "title": "Apa yang Kami Lakukan",
+    "headline": "Kekuatan data",
+    "description1": "Dalam lanskap keuangan yang berkembang pesat saat ini, bank dan institusi keuangan menghadapi tantangan yang belum pernah terjadi sebelumnya. Di AnyTech, kami memahami kebutuhan kritis akan inovasi berkelanjutan dan pengambilan keputusan strategis untuk berkembang.",
+    "description2": "Dengan perspektif global kami dan solusi canggih, kami di sini untuk membantu Anda menciptakan pengalaman pelanggan yang tak tertandingi yang akan membedakan Anda dari pesaing. Mulailah perjalanan transformasi dengan AnyTech—perjalanan yang akan mendefinisikan kembali apa yang mungkin untuk institusi Anda."
+  },
+  "featuresSection": {
+    "fullSuiteSolutions": "Konsultasi",
+    "simplifyTheComplex": "Implementasikan",
+    "cuttingEdgeTech": "Operasikan",
+    "featureDescription1": "Keahlian konsultasi kami mencakup mulai dari penerapan inovasi teknologi keuangan terbaru hingga implementasi strategi pengendalian risiko.",
+    "featureDescription2": "Sederhanakan proses yang kompleks dan optimalkan operasi keuangan Anda dengan memanfaatkan kekuatan AI, Blockchain, Cloud Computing, dan Big Data.",
+    "featureDescription3": "Kami menyediakan rangkaian lengkap layanan operasional dan dukungan yang berlanjut sepanjang siklus hidup produk."
+  },
+  "Consult": {
+    "title": "Langkah Pertama",
+    "headline": "Konsultasi",
+    "description1": "Melangkah menuju transformasi digital dengan ambisi untuk memberikan nilai tambah dalam layanan keuangan bisa menjadi tantangan.",
+    "description2": "Manfaatkan pengalaman luas dan pengetahuan mendalam dari para ahli kami. Keahlian konsultasi kami mencakup mulai dari penerapan inovasi teknologi keuangan terbaru hingga implementasi strategi pengendalian risiko."
+  },
+  "Implement": {
+    "title": "Eksekusi Tanpa Hambatan",
+    "headline": "Implementasi",
+    "description1": "Menjamin kesuksesan yang berkelanjutan berasal dari kemampuan untuk melaksanakan strategi transformasi digital Anda dengan lancar.",
+    "description2": "Menggabungkan keahlian teknologi yang mendalam dan rekam jejak yang terbukti, kami merancang dan mengimplementasikan solusi kustom untuk institusi keuangan yang mendorong kesuksesan jangka panjang."
+  },
+  "NewSetup": {
+    "fullSuiteSolutions": "Pengaturan Baru",
+    "simplifyTheComplex": "Peningkatan Sistem",
+    "cuttingEdgeTech": "Migrasi Sistem",
+    "featureDescription1": "Membangun infrastruktur perbankan dari bawah ke atas untuk melayani kebutuhan Anda dan pelanggan Anda dengan lebih baik.",
+    "featureDescription2": "Memodernisasi infrastruktur Anda saat ini untuk mengatasi tantangan yang ditimbulkan oleh sistem lama.",
+    "featureDescription3": "Migrasikan data dan integrasi Anda ke sistem yang lebih baru tanpa gangguan bisnis."
+  },
+  "Operate": {
+    "title": "Efisiensi Jangka Panjang",
+    "headline": "Operasikan",
+    "description1": "Menyiapkan efisiensi operasional untuk memberikan nilai yang dijanjikan kepada pelanggan Anda sangat penting untuk pertumbuhan jangka panjang.",
+    "description2": "Kami menyediakan rangkaian lengkap layanan operasional dan dukungan yang terus berlanjut sepanjang siklus hidup produk."
+  },
+  "Support": {
+    "fullSuiteSolutions": "Dukungan Operasional",
+    "simplifyTheComplex": "Layanan Personalisasi",
+    "cuttingEdgeTech": "Dukungan Teknis 24/7",
+    "featureDescription1": "Gunakan tim kami untuk mengelola dan memelihara solusi AnyTech Anda, sehingga Anda dapat fokus pada bisnis inti dan inisiatif strategis Anda.",
+    "featureDescription2": "Dari mengembangkan peluang bisnis baru hingga menjalankan pemeliharaan IT backend, tim kami juga dapat menyediakan dukungan lain yang Anda perlukan.",
+    "featureDescription3": "Tim dukungan pelanggan kami tersedia 24/7 untuk menangani pertanyaan Anda dan menyelesaikan masalah yang mungkin timbul."
+  },
+  "Ads": {
+    "title": "Dipercaya oleh yang terbaik"
+  },
+  "BannerAbout": {
+    "minTitle": "TENTANG KAMI",
+    "title": "Membuka jalan menuju masa depan keuangan",
+    "description": "Membuka jalan menuju masa depan keuangan"
+  },
+  "Story": {
+    "title": "CERITA KAMI",
+    "headline": "Membangun masa depan hari ini",
+    "description1": "Didirikan pada Januari 2020, Any Technology adalah perusahaan fintech yang berbasis di Singapura yang berkomitmen untuk membantu industri layanan keuangan global membayangkan kembali perbankan dan layanan pembayaran."
+  },
+  "Experts": {
+    "fullSuiteSolutions": "Ahli dalam teknologi dan keuangan",
+    "simplifyTheComplex": "Pemberdayaan melalui teknologi",
+    "cuttingEdgeTech": "Memahami kebutuhan yang berkembang",
+    "featureDescription1": "Dengan keahlian mendalam tim kami di sektor keuangan dan teknologi, kami adalah penggerak perubahan, membuka jalan bagi inovasi dan pergeseran strategis, membentuk masa depan keuangan.",
+    "featureDescription2": "Memberdayakan lebih dari 40 lembaga keuangan untuk bertransformasi dalam dunia yang berfokus pada digital, platform inovatif kami memungkinkan bank dan lembaga keuangan untuk mengembangkan produk dan penawaran keuangan yang berpusat pada pelanggan.",
+    "featureDescription3": "Dengan tetap berada di garis depan teknologi dan memahami kebutuhan yang berkembang di industri, kami berusaha memberikan solusi mutakhir yang mendorong efisiensi, meningkatkan pengalaman pengguna, dan memungkinkan inklusi keuangan."
+  },
+  "Empowering": {
+    "title": "Memberdayakan lebih dari",
+    "minTitle": "40 institusi keuangan",
+    "maxTitle": "untuk bertransformasi di dunia digital"
+  },
+  "Mission": {
+    "minTitle": "Misi Kami",
+    "title": "Mendefinisikan ulang masa depan",
+    "description": "Untuk mendefinisikan ulang keuangan global dengan memberdayakan institusi dengan teknologi yang mendorong nilai dan pertumbuhan."
+  },
+  "start": {
+    "title": "Mulai transformasi Anda",
+    "description": "Kami siap untuk menjadi mitra strategis guna memberikan dukungan yang Anda butuhkan untuk organisasi Anda.",
+    "button": "Bicara dengan Kami"
+  },
+  "Solution": {
+    "fullSuiteSolutions": "AnyCaaS",
+    "simplifyTheComplex": "AnyBaaS",
+    "cuttingEdgeTech": "AnyPaaS",
+    "featureDescription1": "Bayangkan ulang program kartu Anda dengan solusi Cards-as-a-Service (CaaS) kami. Permudah manajemen kartu, berikan pengalaman pelanggan yang unggul, dan banyak lagi.",
+    "featureDescription2": "Masuki masa depan perbankan dengan platform Banking-as-a-Service (BaaS) kami yang memberi Anda alat yang dibutuhkan untuk beradaptasi dan berkembang di lingkungan digital yang bergerak cepat saat ini.",
+    "featureDescription3": "Tingkatkan kemampuan pemrosesan pembayaran Anda dengan solusi Payment-as-a-Service (PaaS) kami. Nikmati infrastruktur yang aman dan dapat diskalakan yang menangani transaksi dengan mudah."
+  },
+  "legacy": {
+    "title": "Tidak ada lagi sistem lama",
+    "description": "Bicara dengan kami untuk mengetahui bagaimana kami dapat mentransformasi organisasi Anda untuk masa depan.",
+    "button": "Hubungi Kami"
+  },
+  "footer": {
+    "title": "Solusi Kami",
+    "title1": "Kebijakan Privasi",
+    "description": "©2025 Semua hak dilindungi. Any Technology Pte Ltd."
   }
 }

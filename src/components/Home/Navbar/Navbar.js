@@ -35,7 +35,7 @@ const Navbar = () => {
     <>
       {/* Navbar */}
       <nav className="flex items-center lg:bg-opacity-0 justify-between px-6 py-4 bg-[#1F80F0] lg:bg-white">
-        <Link href={'/'}>
+        <Link href={"/"}>
           <Image
             width={170}
             height={170}
@@ -61,18 +61,21 @@ const Navbar = () => {
             <div className="absolute hidden group-hover:block bg-white border rounded-md shadow-lg">
               <ul className="py-2" role="menu">
                 <li className="px-4 py-2 text-black hover:underline">
-                  {t("anycaas")}
+                  <Link href={"/anycaas"}>{t("anycaas")}</Link>
                 </li>
                 <li className="px-4 py-2 text-black hover:underline">
-                  {t("anybaas")}
+                  <Link href={"/anybaas"}>{t("anybaas")}</Link>
                 </li>
                 <li className="px-4 py-2 text-black hover:underline">
-                  {t("anypaas")}
+                  <Link href={"/anypaas"}>{t("anypaas")}</Link>
                 </li>
               </ul>
             </div>
           </div>
-          <Link href={"/services"} className="text-white text-lg hover:underline hover:shadow-lg transition-all duration-300">
+          <Link
+            href={"/services"}
+            className="text-white text-lg hover:underline hover:shadow-lg transition-all duration-300"
+          >
             {t("services")}
           </Link>
           <Link
@@ -167,9 +170,15 @@ const Navbar = () => {
                   className="pl-4 mt-2 space-y-2 text-white overflow-hidden"
                   role="menu"
                 >
-                  <li>{t("anycaas")}</li>
-                  <li>{t("anybaas")}</li>
-                  <li>{t("anypaas")}</li>
+                  <li>
+                    <Link href={"/anycaas"}>{t("anycaas")}</Link>
+                  </li>
+                  <li>
+                    <Link href={"/anybaas"}>{t("anybaas")}</Link>
+                  </li>
+                  <li>
+                    <Link href={"/anypaas"}>{t("anypaas")}</Link>
+                  </li>
                 </motion.ul>
               )}
             </AnimatePresence>
@@ -177,12 +186,12 @@ const Navbar = () => {
 
           <li>
             <button className="text-white hover:text-blue-300">
-              {t("services")}
+              <Link href={"/services"}>{t("services")}</Link>
             </button>
           </li>
           <li>
             <button className="text-white hover:text-blue-300">
-              {t("about_us")}
+              <Link href={"/about"}>{t("about_us")}</Link>
             </button>
           </li>
 
@@ -226,7 +235,7 @@ const Navbar = () => {
 
         <div className="p-4">
           <button className="w-full px-4 py-2 text-white bg-orange-500 rounded-lg hover:bg-orange-600">
-            {t("contact_us")}
+            <Link href={"/contactUs"}>{t("contact_us")}</Link>
           </button>
         </div>
       </div>
